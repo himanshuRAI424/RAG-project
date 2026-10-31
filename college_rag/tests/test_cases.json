@@ -1,0 +1,14 @@
+[
+ {"id":1,"scenario":"1 Clear answer","question":"What is the library fine per day for a late book?","expect_found":true,"expected_sources":["library_and_placement.txt"],"expected_keywords":["2"]},
+ {"id":2,"scenario":"1 Clear answer","question":"What is the hostel curfew time?","expect_found":true,"expected_sources":["hostel_rules.txt"],"expected_keywords":["10"]},
+ {"id":3,"scenario":"1 Clear answer","question":"What is the late fee per day after the due date?","expect_found":true,"expected_sources":["fee_structure.txt"],"expected_keywords":["100"]},
+ {"id":4,"scenario":"1 Clear answer","question":"What is the re-evaluation fee per paper?","expect_found":true,"expected_sources":["exam_rules_circular.txt"],"expected_keywords":["500"]},
+ {"id":5,"scenario":"2 Two documents","question":"What is the hostel fee and what is the last date to pay it?","expect_found":true,"expected_sources":["hostel_rules.txt","fee_structure.txt"],"expected_keywords":["60,000","15 august"]},
+ {"id":6,"scenario":"2 Two documents","question":"If I live in the hostel, what is the tuition fee plus hostel fee per year?","expect_found":true,"expected_sources":["hostel_rules.txt","fee_structure.txt"],"expected_keywords":["60,000","1,20,000"]},
+ {"id":7,"scenario":"3 Unrelated","question":"Who won the cricket world cup?","expect_found":false,"expected_sources":[],"expected_keywords":[]},
+ {"id":8,"scenario":"3 Unrelated","question":"Give me a recipe for butter chicken.","expect_found":false,"expected_sources":[],"expected_keywords":[]},
+ {"id":9,"scenario":"3 Related but absent","question":"What is the scholarship amount for university toppers?","expect_found":false,"expected_sources":[],"expected_keywords":[]},
+ {"id":10,"scenario":"4 Different wording","question":"For how many days can I keep a book before I get penalised?","expect_found":true,"expected_sources":["library_and_placement.txt"],"expected_keywords":["14"]},
+ {"id":11,"scenario":"4 Different wording","question":"What minimum CGPA do I need to sit for campus recruitment?","expect_found":true,"expected_sources":["library_and_placement.txt"],"expected_keywords":["6.0"]},
+ {"id":12,"scenario":"5 Conflict","question":"What is the minimum attendance required to appear in end semester exams?","expect_found":true,"expected_sources":["academic_handbook.txt","exam_rules_circular.txt"],"expected_keywords":["75","80"]}
+]
